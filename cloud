@@ -1,0 +1,9 @@
+spring.application.name=serverName
+spring.security.user.name=li
+spring.security.user.password=123456
+
+eureka.instance.hostname=192.168.3.134
+eureka.client.register-with-eureka=false
+eureka.client.fetch-registry=false
+eureka.client.service-url.defaultZone=http://${spring.security.user.name}:${spring.security.user.password}@${eureka.instance.hostname}:${server.port}/eureka/
+eureka.instance.lease-renewal-interval-in-seconds=10
